@@ -1,0 +1,68 @@
+# Runic .gitignore
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.exe
+*.dll
+*.dylib
+
+# Go
+implementations/go/go.sum
+implementations/go/*.test
+implementations/go/*.out
+implementations/go/cmd/*/cmd
+
+# Python
+implementations/python/__pycache__/
+implementations/python/*.py[cod]
+implementations/python/*$py.class
+implementations/python/.pytest_cache/
+implementations/python/venv/
+implementations/python/.coverage
+implementations/python/htmlcov/
+implementations/python/dist/
+implementations/python/build/
+implementations/python/*.egg-info/
+
+# Rust
+implementations/rust/target/
+implementations/rust/Cargo.lock
+
+# JavaScript/TypeScript
+implementations/js/node_modules/
+implementations/js/dist/
+implementations/js/build/
+implementations/js/*.log
+implementations/js/package-lock.json
+implementations/js/yarn.lock
+
+# C
+implementations/c/*.out
+implementations/c/build/
+
+# Test outputs
+*.tmp
+*.log
+
+# Documentation builds
+docs/_build/
+docs/.doctrees/
+
+# IDE
+*.iml
+.project
+.classpath
+.settings/
