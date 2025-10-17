@@ -1,0 +1,6 @@
+goal: (statement nl)*
+statement: assignment | print
+assignment: IDENT "=" expr
+print: "print" expr
+expr: IDENT | INTEGER
+nl: "\n"
